@@ -5,7 +5,7 @@
 
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(-16.666%);
   }
   100% {
     transform: translateX(-50%);
@@ -13,7 +13,7 @@
 }
 
 .animate-scroll {
-  animation: scroll 20s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 body {
@@ -89,4 +89,17 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.w-screen {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+
+input::placeholder,
+textarea::placeholder {
+  color: white !important;
+  opacity: 0.7;
 }
