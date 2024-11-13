@@ -110,7 +110,7 @@ export default function LandingPage() {
         <div className="container flex h-16 items-center justify-between px-4">
           <div className="flex items-center gap-2">
             <Image
-              src="/images/logo.png"
+              src="https://imgur.com/nYIJuF2.png"
               alt="Global PDR Logo"
               width={30}
               height={30}
@@ -177,7 +177,7 @@ export default function LandingPage() {
                     controls
                     autoPlay
                   >
-                    <source src="/videos/intro.mp4" type="video/mp4" />
+                    <source src="/video-placeholder.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 ) : (
@@ -214,7 +214,7 @@ export default function LandingPage() {
               </CardHeader>
               <CardContent className="space-y-6">
                 <Image
-                  src="/images/before-repair.jpg"
+                  src="/placeholder.svg?height=400&width=600"
                   alt="Before repair - car damage"
                   width={600}
                   height={400}
@@ -237,7 +237,7 @@ export default function LandingPage() {
               </CardHeader>
               <CardContent className="space-y-6">
                 <Image
-                  src="/images/after-repair.jpg"
+                  src="/placeholder.svg?height=400&width=600"
                   alt="After repair - restored car"
                   width={600}
                   height={400}
@@ -352,7 +352,7 @@ export default function LandingPage() {
             {[...Array(8)].map((_, i) => (
               <div key={i} className="flex-shrink-0">
                 <Image
-                  src="/logo.png"
+                  src="https://imgur.com/nYIJuF2.png"
                   alt="Global PDR Logo"
                   width={120}
                   height={60}
@@ -442,17 +442,17 @@ export default function LandingPage() {
               {
                 title: "Hail Damage Repair",
                 description: "Our expert technicians use state-of-the-art paintless dent repair techniques to remove hail damage, restoring your vehicle's appearance without compromising the original paint job.",
-                image: "/images/hail-damage.jpg"
+                image: "/placeholder.svg?height=200&width=300"
               },
               {
                 title: "Same Day Service",
                 description: "We understand the inconvenience of being without your vehicle. That's why we offer quick turnaround times, with most repairs completed within hours, getting you back on the road as soon as possible.",
-                image: "/images/same-day.jpg"
+                image: "/placeholder.svg?height=200&width=300"
               },
               {
                 title: "Insurance Claims Assistance",
                 description: "Navigating insurance claims can be stressful. Our team handles all insurance paperwork and offers direct billing to your insurance company, making the repair process smooth and hassle-free for you.",
-                image: "/images/insurance.jpg"
+                image: "/placeholder.svg?height=200&width=300"
               }
             ].map((service, index) => (
               <div key={index} className="grid md:grid-cols-2 gap-8 items-center p-6 hover:bg-gray-50 rounded-xl transition-all shadow-lg hover:shadow-xl">
@@ -694,7 +694,7 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center md:text-left">
               <Image
-                src="/logo.png"
+                src="https://imgur.com/nYIJuF2.png"
                 alt="Global PDR Logo"
                 width={60}
                 height={60}
