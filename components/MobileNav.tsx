@@ -17,62 +17,65 @@ export function MobileNav() {
       <Button
         variant="ghost"
         size="icon"
-        className="relative z-50"
+        className="relative z-50 bg-white hover:bg-gray-100 rounded-md p-2"
         onClick={toggleMenu}
       >
         {isOpen ? (
-          <X className="h-6 w-6" />
+          <X className="h-6 w-6 text-black" />
         ) : (
-          <Menu className="h-6 w-6" />
+          <Menu className="h-6 w-6 text-black" />
         )}
       </Button>
 
       {isOpen && (
-        <div className="fixed inset-0 z-40 bg-white">
-          <div className="flex flex-col items-center justify-center h-full space-y-8">
-            <Link 
-              href="/locations" 
-              className="text-gray-700 hover:text-gray-900 font-bold text-xl"
-              onClick={toggleMenu}
-            >
-              Locations
-            </Link>
-            <Link 
-              href="/hail-damage-repair" 
-              className="text-gray-700 hover:text-gray-900 font-bold text-xl"
-              onClick={toggleMenu}
-            >
-              Hail Damage Repair
-            </Link>
-            <Link 
-              href="/reviews" 
-              className="text-gray-700 hover:text-gray-900 font-bold text-xl"
-              onClick={toggleMenu}
-            >
-              Reviews
-            </Link>
-            <Link 
-              href="/our-team" 
-              className="text-gray-700 hover:text-gray-900 font-bold text-xl"
-              onClick={toggleMenu}
-            >
-              Our Team
-            </Link>
-            <Link 
-              href="/before-and-after" 
-              className="text-gray-700 hover:text-gray-900 font-bold text-xl"
-              onClick={toggleMenu}
-            >
-              Before and After
-            </Link>
-            <Link 
-              href="/get-free-quote"
-              onClick={toggleMenu}
-            >
-              <Button className="bg-black text-white hover:bg-gray-800 font-bold text-xl px-8 py-6">
-                Get a Free Quote
-              </Button>
-            </Link>
+        <div className="fixed inset-0 z-40 bg-white/95 backdrop-blur-sm overflow-y-auto">
+          <div className="min-h-screen py-20 px-4">
+            <div className="flex flex-col items-center justify-start space-y-6">
+              <Link 
+                href="/locations" 
+                className="text-black hover:text-gray-700 font-bold text-xl"
+                onClick={toggleMenu}
+              >
+                Locations
+              </Link>
+              <Link 
+                href="/hail-damage-repair" 
+                className="text-black hover:text-gray-700 font-bold text-xl"
+                onClick={toggleMenu}
+              >
+                Hail Damage Repair
+              </Link>
+              <Link 
+                href="/reviews" 
+                className="text-black hover:text-gray-700 font-bold text-xl"
+                onClick={toggleMenu}
+              >
+                Reviews
+              </Link>
+              <Link 
+                href="/our-team" 
+                className="text-black hover:text-gray-700 font-bold text-xl"
+                onClick={toggleMenu}
+              >
+                Our Team
+              </Link>
+              <Link 
+                href="/before-and-after" 
+                className="text-black hover:text-gray-700 font-bold text-xl"
+                onClick={toggleMenu}
+              >
+                Before and After
+              </Link>
+              <Link 
+                href="/get-free-quote"
+                onClick={toggleMenu}
+                className="mt-4"
+              >
+                <Button className="bg-black text-white hover:bg-gray-800 font-bold text-xl px-6 py-4">
+                  Get a Free Quote
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       )}
