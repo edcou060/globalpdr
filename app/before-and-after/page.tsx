@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, ChevronLeft, ChevronRight } from 'lucide-react'
 import { motion, AnimatePresence } from "framer-motion"
+import { MobileNav } from "@/components/MobileNav"
 
 const beforeAfterImages = [
   { before: "/photos/before1.jpg", after: "/photos/after1.jpg" },
@@ -71,18 +72,21 @@ export default function BeforeAndAfterPage() {
               />
             </Link>
 
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="/locations" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Locations</Link>
-              <Link href="/hail-damage-repair" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Hail Damage Repair</Link>
-              <Link href="/reviews" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Reviews</Link>
-              <Link href="/our-team" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Our Team</Link>
-              <Link href="/before-and-after" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Before and After</Link>
+            <div className="flex items-center">
+              <div className="hidden md:flex items-center space-x-8">
+                <Link href="/locations" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Locations</Link>
+                <Link href="/hail-damage-repair" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Hail Damage Repair</Link>
+                <Link href="/reviews" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Reviews</Link>
+                <Link href="/our-team" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Our Team</Link>
+                <Link href="/before-and-after" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Before and After</Link>
+                <Link href="/get-free-quote">
+                  <Button className="bg-black text-white hover:bg-gray-800 font-bold text-lg">
+                    Get a Free Quote
+                  </Button>
+                </Link>
+              </div>
+              <MobileNav />
             </div>
-            <Link href="/get-free-quote">
-            <Button className="bg-black text-white hover:bg-gray-800 font-bold text-lg">
-              Get a Free Quote
-            </Button>
-            </Link>
           </nav>
         </div>
       </header>

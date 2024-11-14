@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Facebook, Twitter, Instagram, Phone, Mail, MapPin, Shield, Clock, CheckCircle, ArrowRight, DollarSign } from 'lucide-react'
+import { MobileNav } from "@/components/MobileNav"
 
 export default function HailDamageRepair() {
 
@@ -25,19 +26,21 @@ export default function HailDamageRepair() {
               />
             </Link>
 
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="/locations" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Locations</Link>
-              <Link href="/hail-damage-repair" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Hail Damage Repair</Link>
-              <Link href="/reviews" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Reviews</Link>
-              <Link href="/our-team" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Our Team</Link>
-              <Link href="/before-and-after" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Before and After</Link>
+            <div className="flex items-center">
+              <div className="hidden md:flex items-center space-x-8">
+                <Link href="/locations" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Locations</Link>
+                <Link href="/hail-damage-repair" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Hail Damage Repair</Link>
+                <Link href="/reviews" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Reviews</Link>
+                <Link href="/our-team" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Our Team</Link>
+                <Link href="/before-and-after" className="text-gray-700 hover:text-gray-900 font-bold text-lg">Before and After</Link>
+                <Link href="/get-free-quote">
+                  <Button className="bg-black text-white hover:bg-gray-800 font-bold text-lg">
+                    Get a Free Quote
+                  </Button>
+                </Link>
+              </div>
+              <MobileNav />
             </div>
-
-            <Link href="/get-free-quote">
-              <Button className="bg-black text-white hover:bg-gray-800 font-bold text-lg">
-                Get a Free Quote
-              </Button>
-            </Link>
           </nav>
         </div>
       </header>
