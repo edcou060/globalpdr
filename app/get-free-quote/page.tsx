@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Slider } from "@/components/ui/slider"
 import { Textarea } from "@/components/ui/textarea"
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Upload, Car, Droplet } from 'lucide-react'
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Upload} from 'lucide-react'
 
 export default function GetFreeQuotePage() {
   const [damageSize, setDamageSize] = useState(50)

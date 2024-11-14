@@ -6,7 +6,6 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Phone, Mail, MapPin, Clock, Car, Shield, Wrench, Facebook, Twitter, Instagram, ArrowRight, Navigation } from 'lucide-react'
 
 const locations = [

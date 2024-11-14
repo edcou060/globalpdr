@@ -1,15 +1,12 @@
 'use client'
 
-import { useState, useCallback, useEffect, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ChevronRight, Facebook, Twitter, Instagram, Phone, Mail, MapPin, Shield, Clock, CheckCircle, ArrowRight, DollarSign } from 'lucide-react'
-import useEmblaCarousel from 'embla-carousel-react'
+import { Facebook, Twitter, Instagram, Phone, Mail, MapPin, Shield, Clock, CheckCircle, ArrowRight, DollarSign } from 'lucide-react'
 
 export default function HailDamageRepair() {
-  const [emblaRef, emblaApi] = useEmblaCarousel()
 
   return (
     <div className="flex min-h-screen flex-col overflow-x-hidden">

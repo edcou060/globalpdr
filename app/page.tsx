@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { ChevronRight, ChevronLeft, ChevronDown, Facebook, Twitter, Instagram, ArrowRight, Star, CheckCircle, Clock, DollarSign, Shield, Car, PenToolIcon as Tool, MapPin, Phone, Mail, Menu, Play, ShieldCheck, FileText } from 'lucide-react'
+import { ChevronRight, ChevronLeft, Facebook, Twitter, Instagram, ArrowRight, Star, CheckCircle, Clock, DollarSign, Shield, Car, PenToolIcon as Tool, MapPin, Phone, Mail, Play, ShieldCheck, FileText } from 'lucide-react'
 import {
   Accordion,
   AccordionContent,
@@ -20,7 +20,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import useEmblaCarousel from 'embla-carousel-react'
 
 const reviews = [
@@ -148,7 +147,7 @@ export default function LandingPage() {
               <span className="text-green-400 block mt-2 font-extrabold">Restore Your Car's Beauty Today</span>
             </h1>
             <p className="max-w-[700px] text-gray-300 md:text-xl font-bold">
-              Don't let hail damage diminish your vehicle's value or appearance. Our professional paintless dent repair services guarantee quality repairs with same-day service available. Trust Global PDR to bring your car back to its pre-storm condition.
+              Don&apos;t let hail damage diminish your vehicle's value or appearance. Our professional paintless dent repair services guarantee quality repairs with same-day service available. Trust Global PDR to bring your car back to its pre-storm condition.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <Link href="/get-free-quote">
@@ -186,7 +185,7 @@ export default function LandingPage() {
                   />
                 ) : (
                   <div className="relative" key="thumbnail">
-                    <img
+                    <Image
                       src="https://img.youtube.com/vi/3LGKvdo6a0k/maxresdefault.jpg"
                       alt="Video thumbnail"
                       className="w-full aspect-video object-cover"
@@ -426,7 +425,7 @@ export default function LandingPage() {
                     <Card className="mx-8 bg-white/10 border-0 shadow-xl backdrop-blur-sm">
                       <CardContent className="p-8">
                         <blockquote className="text-xl text-white text-center mb-6">
-                          "{review.text}"
+                        &quot;{review.text}&quot;
                         </blockquote>
                         <cite className="block text-center text-white/80 not-italic font-medium">
                           - {review.author}
