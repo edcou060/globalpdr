@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, ChevronLeft, ChevronRight } from 'lucide-react'
 import { motion, AnimatePresence } from "framer-motion"
 import { MobileNav } from "@/components/MobileNav"
+import { garamond } from "@/app/fonts"
 
 const teamMembers = [
   {
@@ -111,8 +112,7 @@ export default function OurTeamPage() {
       {/* Our Team Section */}
       <section className="pt-32 min-h-screen">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">Meet Our Expert Team</h1>
-          
+          <h1 className={`text-4xl md:text-5xl font-bold text-center mb-12 text-white ${garamond.className}`}>Meet Our Expert Team</h1>
           <div className="relative">
             <div className="flex justify-center items-center h-[600px]">
               <AnimatePresence mode="wait">

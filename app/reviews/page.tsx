@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Facebook, Twitter, Instagram, Phone, Mail, MapPin, Star, Search, ThumbsUp, MessageSquare, Award } from 'lucide-react'
 import { motion } from "framer-motion"
 import { MobileNav } from "@/components/MobileNav"
+import { garamond } from "@/app/fonts"
 
 const reviews = [
   {
@@ -117,7 +118,7 @@ export default function ReviewsPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
             <motion.h1 
-              className="text-5xl md:text-6xl font-bold mb-6"
+              className={`${garamond.className} text-5xl md:text-6xl font-bold mb-6`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}

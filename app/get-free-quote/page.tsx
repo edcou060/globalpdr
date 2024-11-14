@@ -12,6 +12,7 @@ import { Slider } from "@/components/ui/slider"
 import { Textarea } from "@/components/ui/textarea"
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Upload} from 'lucide-react'
 import { MobileNav } from "@/components/MobileNav"
+import { garamond } from "@/app/fonts"
 
 export default function GetFreeQuotePage() {
   const [damageSize, setDamageSize] = useState(50)
@@ -72,7 +73,9 @@ export default function GetFreeQuotePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">Get Your Free Quote</h1>
+            <h1 className={`${garamond.className} text-4xl md:text-5xl font-bold text-center mb-12 text-white`}>
+              Get Your Free Quote
+            </h1>
           </motion.div>
           
           <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-2xl">

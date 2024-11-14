@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Facebook, Twitter, Instagram, Phone, Mail, MapPin, Shield, Clock, CheckCircle, ArrowRight, DollarSign } from 'lucide-react'
 import { MobileNav } from "@/components/MobileNav"
+import { garamond } from "@/app/fonts"
 
 export default function HailDamageRepair() {
 
@@ -51,7 +52,7 @@ export default function HailDamageRepair() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
             <div className="text-center md:text-left">
-              <h1 className="text-6xl font-extrabold text-white mb-6">
+              <h1 className={`${garamond.className} text-6xl font-extrabold text-white mb-6`}>
                 DO YOU HAVE HAIL DAMAGE?
               </h1>
               <p className="text-2xl text-gray-300 mb-8">

@@ -9,6 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, ChevronLeft, ChevronRight } from 'lucide-react'
 import { motion, AnimatePresence } from "framer-motion"
 import { MobileNav } from "@/components/MobileNav"
+import { garamond } from "@/app/fonts"
 
 const beforeAfterImages = [
   { before: "/photos/before1.jpg", after: "/photos/after1.jpg" },
@@ -94,7 +95,9 @@ export default function BeforeAndAfterPage() {
       {/* Before and After Gallery Section */}
       <section className="pt-32 pb-32 min-h-screen bg-gradient-to-b from-[#1a2e35] to-[#2a3f48] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">Before and After Gallery</h1>
+          <h1 className={`${garamond.className} text-4xl md:text-5xl font-bold text-center mb-12`}>
+            Before and After Gallery
+          </h1>
           
           <div className="max-w-4xl mx-auto mb-4">
             <Tabs defaultValue="slider" className="w-full">

@@ -22,6 +22,8 @@ import {
 } from "@/components/ui/table"
 import useEmblaCarousel from 'embla-carousel-react'
 import { MobileNav } from "@/components/MobileNav"
+import { garamond } from "@/app/fonts"
+
 
 const reviews = [
   {
@@ -146,8 +148,12 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="flex flex-col items-center text-center space-y-8">
             <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl xl:text-6xl/none max-w-3xl">
-              <span className="font-extrabold">Expert Auto Hail Repair</span>
-              <span className="text-green-400 block mt-2 font-extrabold">Restore Your Car's Beauty Today</span>
+              <span className={`${garamond.className} text-5xl md:text-6xl font-extrabold tracking-tight leading-tight`}>
+                Expert Auto Hail Repair
+              </span>
+              <span className={`${garamond.className} text-green-400 block mt-4 text-4xl md:text-5xl font-extrabold tracking-tight leading-tight`}>
+                Restore Your Car's Beauty Today
+              </span>
             </h1>
             <p className="max-w-[700px] text-gray-300 md:text-xl font-bold">
               Don&apos;t let hail damage diminish your vehicle's value or appearance. Our professional paintless dent repair services guarantee quality repairs with same-day service available. Trust Global PDR to bring your car back to its pre-storm condition.
@@ -191,6 +197,8 @@ export default function LandingPage() {
                     <Image
                       src="https://img.youtube.com/vi/3LGKvdo6a0k/maxresdefault.jpg"
                       alt="Video thumbnail"
+                      width={1280}
+                      height={720}
                       className="w-full aspect-video object-cover"
                     />
                     <Button
